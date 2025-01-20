@@ -10,10 +10,10 @@ class Restaurant():
 
 
      def disp_menu(self):
-         st.subheader("MENU")
+         st.sidebar.subheader("MENU")
          for food, price in self.menu.items():
              # the items() method: gets you both the keys and values in a dictionary.
-            st.write(f"{food}-->{price}")
+            st.sidebar.write(f"{food}-->{price}")
 
 
      def take_order(self):
