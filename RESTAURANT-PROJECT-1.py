@@ -18,6 +18,7 @@ class Restaurant():
 
      def take_order(self):
          order_count = 1  # Counter to generate unique keys for text_input widgets as they always take unique value
+         st.header("WELCOME")
          rest_pic = Image.open("An-image-of-Alberto-and-Luca-eating-Trenette-al-Pesto.jpg")
          st.image(rest_pic, caption="WELCOME TO RESTAURANT")
 
