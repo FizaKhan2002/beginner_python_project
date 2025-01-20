@@ -20,8 +20,7 @@ class Restaurant():
          order_count = 1  # Counter to generate unique keys for text_input widgets as they always take unique value
          rest_pic = Image.open("An-image-of-Alberto-and-Luca-eating-Trenette-al-Pesto.jpg")
          st.image(rest_pic, caption="WELCOME TO RESTAURANT")
-
-         self.order=st.text_input("do you want to order something ?",key="first_order").lower()
+         self.order = st.radio("do you want to order something ?", options=["yes", "no"])
 
          while self.order=="yes":
              self.disp_menu()
