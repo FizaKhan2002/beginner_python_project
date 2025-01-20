@@ -44,7 +44,7 @@ class Restaurant():
      def show_total(self):
          st.write(f"Your Total Amount is Rs.{self.total_amount}")
 
-         thank_pic = Image.open(r"C:\Users\nisha\Downloads\thanku.jpeg")
+         thank_pic = Image.open("thanku.jpeg")
          col1, col2, col3 = st.columns([1, 6, 1])
 
          with col1:
